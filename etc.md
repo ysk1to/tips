@@ -14,3 +14,10 @@ $ ffmpeg -i hoge.mov -r 24 -filter_complex "setpts=PTS/3.0,scale=690:-1,split [a
 $ open -a /Applications/Google\ Chrome.app example.gif
 ```
 
+## パスワード付きzipファイルを作成
+
+```
+$ zip -er hoge.zip hoge/
+Enter password: {password}
+Verify password: {password}
+```
